@@ -1,0 +1,59 @@
+name: sina
+description: "A System Mobile Store"
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ^3.12.2
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  supabase_flutter: ^2.16.0
+  flutter_animate: ^4.5.2
+  uuid: ^4.6.0
+  kurd_localization: ^2.0.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/logo.png
+    - assets/icon.png
+
+  fonts:
+    - family: Rabar
+      fonts:
+        - asset: assets/Rabar.ttf
+    - family: NRT
+      fonts:
+        - asset: assets/NRT-Bd.ttf
+          weight: 700
+
+# dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+    background_color: "#F8FAFC"
+    theme_color: "#F8FAFC"
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icon.png"
